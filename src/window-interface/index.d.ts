@@ -12,6 +12,7 @@ interface Window {
       electronIpcRemoveListener: (channel: string, listener: (event: any, arg: any) => void) => void;
       /** Electron ipcRenderer wrapper of removeAllListeners method */
       electronIpcRemoveAllListeners: (channel: string) => void;
+      electronIpcInvoke: (channel: string, ...arg: any) => void;
     }
   }
   
